@@ -1,16 +1,76 @@
-# React + Vite
+# 📝 Form Validation Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive user registration form built with **React** and **Vite**. Features real-time validation, password strength checking, and a polished UI with glassmorphism design.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Real-time Form Validation** – Instant feedback on all fields as you type
+- **Password Strength Meter** – Visual indicator for weak/strong passwords
+- **Password Match Check** – Confirms both password fields match
+- **Country Code Selector** – Dropdown with flags for 30+ countries
+- **Mobile Number Validation** – Ensures a valid 10-digit number is entered
+- **Terms & Conditions Checkbox** – Required before submitting
+- **Success Screen** – Animated confirmation after successful registration
+- **Fully Responsive** – Works seamlessly on desktop, tablet, and mobile
+- **Premium UI** – Glassmorphism design with smooth micro-animations
 
-## React Compiler
+## 🚀 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- [React](https://reactjs.org/) – UI library
+- [Vite](https://vitejs.dev/) – Fast build tool & dev server
+- Vanilla CSS – Custom styling with no external CSS frameworks
 
-## Expanding the ESLint configuration
+## 📦 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/kevinpatel8292-alt/form-validation.git
+
+# Navigate into the project
+cd form-validation
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+The app will be available at `http://localhost:5173`
+
+## 🗂️ Project Structure
+
+```
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── App.jsx        # Main application component with form logic
+│   ├── index.css      # Global styles & design system
+│   └── main.jsx       # App entry point
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+## 🌐 Live Demo
+
+[View Live on Vercel →](https://form-validation-ten-livid.vercel.app)
+
+## 📸 Preview
+
+The registration form includes:
+- Split-panel layout with animated left panel
+- Floating label inputs with real-time validation icons
+- 4-bar password strength indicator
+- Country flag dropdown for mobile number
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
