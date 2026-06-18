@@ -196,32 +196,11 @@ function App() {
 
     setIsSubmitting(true);
     
-    try {
-      const fullPhoneNumber = `${formData.countryCode}${formData.mobileNumber}`;
-      const response = await fetch('http://localhost:3001/send-sms', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ 
-          to: fullPhoneNumber,
-          message: `Hello ${formData.fullName}! Your account has been created successfully.`
-        })
-      });
-
-      const data = await response.json();
-      
-      if (data.success) {
-        setIsSuccess(true);
-      } else {
-        alert('Account created, but failed to send SMS: ' + data.error);
-        setIsSuccess(true);
-      }
-    } catch (error) {
-      console.error('API Error:', error);
-      alert('Could not connect to SMS server. Make sure the backend is running on port 3001!');
-      setIsSuccess(true);
-    } finally {
+    // Simulate network delay
+    setTimeout(() => {
       setIsSubmitting(false);
-    }
+      setIsSuccess(true);
+    }, 1500);
   };
 
   return (
